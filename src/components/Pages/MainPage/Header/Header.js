@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from "./Button/Button";
 import {Link} from "react-router-dom";
+import logo from './logo_trade.png'
 const Header = ()=>{
     return (
         <div className="header">
@@ -8,7 +9,7 @@ const Header = ()=>{
                 <Link to={'/'}>
                     <div className="header__logo">
 
-                        <img className="continent__logo__img" src="http://www.shop.continent.kg/images/logo_trade.png"
+                        <img className="continent__logo__img" src={logo}
                              alt="Continent-Trade logo"/>
                         <p>ОФИЦИАЛЬНЫЙ ПАРТНЁР HPE,HPI И XEROX В КЫРГЫЗСТАНЕ</p>
 
