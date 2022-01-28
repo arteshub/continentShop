@@ -1,0 +1,23 @@
+.page__for__goods {
+    color: #0E4094;
+    font-weight: bold;
+    margin: 20px;
+   cursor: pointer;
+    font-size: 20px;
+}
+.page__for__goods:hover {
+    color: #4169E1;
+}
+.pages__for__goods {
+    /*position: absolute;*/
+    /*left: 35%;*/
+    /*bottom: 54px;*/
+    text-align: center;
+    transform: translate(0px, -20px);
+    /*text-align: center;*/
+    /*transform: translate(0px, -20px);*/
+
+}
+.page__for__goods__pointer__none {
+    color:gray ;
+}
