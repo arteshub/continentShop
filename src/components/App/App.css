@@ -918,4 +918,22 @@ body {
   margin-left: 120px;
 }
 
+/*адаптивка*/
 
+@media screen and (max-width: 1180px) {
+  .content__top {
+    display: inline-block;
+  }
+  .sort__label {
+    margin-top: 40px;
+  }
+  .footer__contacts {
+  display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .categories ul {
+    display: inline-block;
+  }
+}
