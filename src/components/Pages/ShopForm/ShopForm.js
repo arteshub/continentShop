@@ -31,7 +31,7 @@ const ShopForm = ()=>{
 
 
     return (
-        <form action={'https://docs.google.com/forms/d/e/1FAIpQLScoQmMotRKXb2NSf6F3a0ON36UJyl4MSG5QdoFdMnSpDWh_Tg/formResponse'} className="card">
+        <form target={'_blank'} action={'https://docs.google.com/forms/d/e/1FAIpQLScoQmMotRKXb2NSf6F3a0ON36UJyl4MSG5QdoFdMnSpDWh_Tg/formResponse'} className="card">
             <Link to={'/'}>
                 <img className={'toHome__Button1'} src="https://cdn-icons-png.flaticon.com/512/6298/6298551.png" alt=""/>
             </Link>
