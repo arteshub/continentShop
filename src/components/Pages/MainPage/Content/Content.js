@@ -10,7 +10,11 @@ const Content = ({items,onClickItem})=>{
 
     const {sortBy} = useSelector(({filters})=>filters);
 
+    const [show,setShow]= useState(false);
 
+    console.log(window.screen)
+
+    console.log(()=> window.screen.availWidth>845?setShow(false):'')
 
     const [active,setActive] = useState(null)
 
@@ -33,7 +37,15 @@ const Content = ({items,onClickItem})=>{
                 <div className="container">
                     <div className="content__top">
                         <div className="categories">
-                            <ul>
+                            <div className={'categoties__button'}><b>{"Категории товара".toUpperCase()}</b></div>
+                            <input type="checkbox" id="menu_checkbox"/>
+                                <label onClick={()=>setShow(!show)} htmlFor="menu_checkbox">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </label>
+                            <div className={show===true?'disabled':''} ><b>(развернуть)</b></div>
+                            <ul className={show===false?'disabled':''}>
                                 <li className={active===null?'active':''} onClick={()=>onItemClick(null)}>Все</li>
                                 {items.map((name,index)=>{
                                     return <li className={active===index?"active":''} onClick={()=>onItemClick(index)}  key={`${name} ${index}`}>{name}</li>

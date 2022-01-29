@@ -79,7 +79,12 @@ a {
 }
 
 .header {
-  background-color: #0E4094;
+  text-align: left;
+  height: 400px;
+  width: 100%;
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/394422442007896484/86442582158F578E72B2D57F035EA46CF85CF45D/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true");
+  background-position: center;
+  background-size: cover;
   border-bottom: 1px solid #f6f6f6;
   padding: 40px 0;
   margin-top: -20px;
@@ -105,7 +110,7 @@ a {
 }
 
 .header__logo img {
-  margin-right: 15px
+  margin-left: 15px
 }
 
 .header__logo h1 {
@@ -932,8 +937,8 @@ body {
 
 @media screen and (max-width: 960px) {
   .categories ul {
-    margin-top: 20px;
     border: 2px #0E4094 solid;
+    border-radius: 10px;
     display: inline-block;
   }
   .categories ul li {
@@ -963,11 +968,22 @@ body {
     margin-top: 50px;
   }
 }
+
+@media screen and (max-width: 1010px) {
+  .header {
+    height: 300px;
+  }
+}
+
 @media screen and (max-width: 845px) {
 
   .button--cart {
+    z-index: 2;
     padding: 5px 10px;
     right: 116px;
     margin-top: 50px;
+  }
+  .header {
+    height: 200px;
   }
 }
